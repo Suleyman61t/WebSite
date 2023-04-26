@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iletisim</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ustmenu {
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: 6%;
+
+
+    }
+
+    .ustalt {
+        background-color: orange;
+        height: 10px;
+    }
+
+    .orta {
+        width: 50%;
+        margin-bottom: 5px;
+        background-color: grey;
+        height: 1200px;
+        align-items: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .alt {
+        display: flex;
+        align-items: center;
+        background-color: lightblue;
+        color: white;
+        height: 80px;
+        justify-content: space-around;
+     
+    }
+
+    .item {
+        font-size: 25px;
+        color: white;
+        height: 40px;
+        width: 130px;
+        text-align: center;
+        align-items: center;
+        text-shadow:black 2px 2px 2px;
+    }
+
+    .ust a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .ustmenu div:hover {
+        text-shadow: blue 3px 3px 3px;
+    }
+
+    .ust {
+        background-color: lightblue;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ustlogo {
+        align-items: center;
+        margin-right: 6%;
+    }
+    .ustlogo h1:first-letter{
+        background-color: black;
+        color: lightblue;
+        font-size: larger;
+        text-decoration: underline;
+    }
+    .ustlogo p:hover{
+        text-shadow: darkblue 5px 5px 5px;
+        color: aqua;
+    }
+    .ustlogo p{
+        font-size: 25px;
+        text-shadow: rgb(65, 75, 79) 5px 5px 5px;
+    }
+
+    .ortaust {
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-width: medium;
+        height: 25%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ortaust img {
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 83%;
+        width: 71%;
+
+    }
+
+    .ortaorta {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        height: 25%;
+        width: 100%;
+    }
+
+    .item2 {
+        margin-left: 30px;
+        width: 33%;
+        height: 100%;
+    }
+    .d1{
+        height: 67%;
+        width: 100%;
+    }
+    .d1 img{
+        
+        height: 100%;
+        width: 100%;
+    }
+    .d2{
+        height: 33%;
+        width: 100%;
+    }
+
+    .ortaalt {
+        height: 33%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        width: auto;
+
+    }
+
+    .ortar {
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 30%;
+        height: 100%;
+    }
+    .ortar img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .altr {
+        align-items: center;
+        margin-left: 260px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        
+
+    }
+    .t{
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .j{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .ortat{
+        margin-left: 15px;
+        width: 70%;
+        height: 100%;
+    }
+    .ortat article{
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .anamenu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .alt p:hover{
+        background-color: blue;
+        color: aquamarine;
+    }
+    .t div:hover{
+        background-color: cadetblue;
+        color: rgb(54, 120, 241);
+    }
+    .item2 img{
+        height: 100%;
+        width: 100%;
+    }
+    .ortaorta .item2{
+        height: 100%;
+        width: 30%;
+    } 
+    .ortaalt2 {
+        display: flex;
+        flex-direction: column;
+        height: 50%; 
+        width: 100%;
+    }
+    .ortaalt2 .ortaalt{
+       height:25%; 
+       width: 87%;
+    }
+    
+.box {
+    max-width: 350px;
+    position: relative;
+}
+ 
+ 
+.search {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    font-size:18px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+ 
+.search:focus {
+    width: 100%;
+} 
+.ayar{
+    margin-right: 50px ;
+}
+</style>
+
+<body>
+
+
+
+
+
+    <div class="ust">
+        <div class="ustlogo">
+
+            <h1>WEB TASARIM</h1>
+            <p>Süleyman kumaş</p>
+
+        </div>
+        <form class="ayar">
+            <div class="box">
+                <input type="text" class="search" placeholder="Ara..">
+            </div>
+        </form>
+        <div class="ustmenu">
+
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/anasayfa.html">ana sayfa</a></div>
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/iletisim.html">iletişim</a></div>
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/hak%C4%B1m%C4%B1zda.html">hakımızda</a></div>
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/dersler.html">dersler</a></div>
+
+        </div>
+    </div>
+    <div class="ustalt"></div>
+    <div class="anamenu">
+        <div class="orta">
+            <div class="ortaust">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhMREhMVFhIVFRUVFhYXFxgWHRUYFxYXGBUYFRUYHSggGBolGxUVIzEhJSkrLi4vFx8zODMtNygtLisBCgoKDg0OGxAQGzAlICUtLS0tLS4tLS0tLS0tLy0tLS0tLS0tLS0vLS8tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAK4BIgMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcEBgECCAP/xABMEAACAQIDBAQHCgoKAwEAAAABAgADEQQSIQUGMUETUWFxByIyNYGRoUJSc3SxsrPB0fAUIzM0U3KCkpPCFRYXYnWitNPh8WPD0kP/xAAbAQACAwEBAQAAAAAAAAAAAAAABQMEBgIBB//EADsRAAEDAgMEBwYFAwUBAAAAAAEAAhEDBAUhMRJBUXEiYYGRscHRBhMyM6HwFEJy4fFSgrIVNGLS4nP/2gAMAwEAAhEDEQA/ANcwGCV0zEa6jjMj+jKfUfXOdkfkvSZK4fGMiVKa2y1AA1xc+Kbix5SzfX1yy5qNbUcAHGBKf2VjbutabjTaSWiZAz47lhbO2LSeqiMGsb3seoE/VNg/qbhuqp+//wATA2N+Xp97fNM28RJfYtfMe0NrOGXH/k5c1LG2DyBTb3DgFp2392qFHD1KqB8y5bXNxq6g6W6iZpssve/8zq/sfSLK0mu9l7qtcWjn1nFx2yJJnLZbl4rPYpTZSrBrAANkacz6JERNGlqREQQkREEJERBCREQQkREEJERBCREQQkREEJERBCREQQkREEJLF2Pu7QFGmWpq7sqszNrqRfTqAvaVyZbuz/ydL4NPmiZL2tua1GjSFNxbLjMEiYAjMZ7zkm+D0mPe/aAOQ1HGVinYWG/Qp6pGHZGHz1B0SWD2AI4eIp+ubIZEe7q/r/8ArpxBgN3cVLlwfUcRsnVzjvbxK7x9jKdqCwAHaGgA3O4LD/oah+hT1Tq+yKFj+KTgeUljimyCnplGvDn3+mY9Tge4/JNWKtTeT3lZAuO5x/fv+qrK8TrE0sJwp7ZH5L0mZkwtk/kh3mZ+HCjyy5H90oPWCvtuJ89xAA3VUz+Y/fDvIW5sXllpS6JPRGkeEz3SpHYuFqdJTcoQti19LWKm3A9s2kTE2W4akhUELawB1IA0FzMuZa8rGpUzERl3E9Z8YXAcXdJ2pUNvf+Z1f2PpFlayyt7/AMzq/sfSLK1m89j/APZP/wDof8WLNYz88fpHi5IiJq0rSIiCEiIghIiIISIiCEiIghIiIISIiCEiIghIiIISIiCEiJxBBMJLd2f+SpfBp80SopmjatcCwrVQBoAHcW7heI8dwh+Itpta8N2STmDvj0V+wvG25cSJmOHWrXMhatVUermYDxs2pA0yKL68rg+qaPQ25iFYN01QkG9mZmB7CpOok5jdsYXF0wtYmlVHkuFLgE8bEalT1G0Q2uCXGGXAqGajHDZcWAlzcwZ2dToNJ8AbN5Xo39E052SCCJiDkcp0Gu+FsAM4q8D3H5JEUdsMxyU6LVLaZlzBfSXUWkqubJ41g1jcA3A05E8Y6cxzQJ/fu1HbCyL6bmGHeI8lWURE0qdKSwe0Aihct9b8eufY7XHvPbIqIpqYTaVHl72SSZPSd6q7TxW7psDGvgAQMm+i27Bb4LTRUFEnKLXzjXrNssn9k7YNZDVan0VIcHZxY9dtBp2ytaY1AAuSQAONzyFhxkvtTZuL/FnEZgCQigkEIeAGVNF06hyiW/wHDy4MaWse8kyXuLjGZ2GF0E9e7gTpLb4hcZky4DcA0DtMSBy14hTu8m3adWjUpUsz+TmcCyr46nidTe1tJh7F2Lh2oq9QMzOpvrYLqbZQOdrcbyGTNhqlWk+hIZGI1tcaMAeI19s2DD43Rb34DU8eHPtl+0taNnbBlsSWu6W1M7UtGc5CIAyHiUkxW7uH1DtiCMsuqfrK1LE0SjMh4qSOq9ja8+UyMZUapUYtqxNvVoABCYGozMqqWZPKA1t9sdF4A6RH35KVgcQMu7jCx4nLKQSCCCNCDpbvE4nSEnZVJ0EU0uQPveZ1PKNBf26xdf4i216IEuIy4du9N8Lwl96donZYDBO85aAd2ZjyWK+HYa2HrH1GfGSqtMDFpY5uTez7mV8OxN1ep7uoADujwzJ8VdxjBGWlIVqLiRoQYkdcgDKctN4zXxiIjlZtJk4PZ9WrcUqbPbjYaDvJ0Exry3Nn4NaNJEUWVVHpPMnrJMR45jBw6m0tbLnExOgAiSYz3jKRvzyUtOntkqqsXg6lI5aiMh5Ai1+48/RPhLM3koLVw9UMB4qs6n3pUEjX2emVqqE8BO8FxYYhQdUcNktMHhpIInPs3LyqzYPUus7KpPAXnboTJGg4Ay2sPvxjKpcNbEZqnWuAwZCVFEW4xJXEULj5JFGdUqm2F7QrCq2UiIkqnSInfD0szql7ZmVb9VyBf2wQpPdjZX4TXWm18gBZ7e9HIHrJIEsirhcMAEFCkVW1vEXiO21zIPdzZf4KHu2Z3tcgWAA4AX7z7JJmpbW+kz95X97U6J6I01Hb98E9s6PuqfSGZ19Pvio7erZlKrSZ8qJUQXVgAt7e5bkQeXUbTQsDQzuqk5Qblm6lUFmNudlB0my747SpOiU0YMwbMSDcKACOI5m/Dsmr0KxRgwtpyPAgixB7CCR6Yxs2VBQOZkzE7u/vzCXXzmmr0e0jf5Lb6ew06NWqU6KIRTJXNWNdRVYJSOa/RmoSb5cttOE1MgJUtfMEe1x7oK3Ed9pJVduuylQ9UhgFyllsLcLFVBJF+w8L3kLI8Po3LNs3DtTkJJgdpJkaTvyzMBVCQdFZaYhGGYMpB1BuJxUqrY+MOB5jqlbROv8ATx/V9FS/Bjj9F0id4jPaV6UiInK5Xam5BDA2IIIPURqDLEw+2KeIVgpvoAwII8odXrlczL2XjTRfONQQbjhcf92iHH8GbiFEOb8xk7GgmSMieuMsxBzTLDL0W1WHfC6Nrq108xBkadchvLhWVg5sUsqqRfQAaBrkkntmOuO0v3+yZVescXlRFJqlhlXq0s3jcMvO54W7pILuS+XWumb3oBI/fuPklahe0rW0p0r94ZUGUQZIGhymd0uyBIMTEqHFKNOtXLqWbTnrx15ctQMupa7hyWqZgOdzflf65O0cUlJRc2F+OpJPHU8SeMhsVhXw7lKgs2h01DDrU9R+qY2Irl7dnKNHUvxTg5pmnAgjeN2eh5rqhWbb0svi/j0XGJql3Zzxa59ZnyiZWJwwCJUTVG0N+Kuts6n1gjrDDqMYbTWkM46dm7nCol0nNYszwFIGW4PpI7bgzAmVhqRvqptbTly04dsW4tSY6ltEwRyzG8QYniNY4FO8CrVG19hrNoOgHXoncZAMcDplGeS7E2+TvnDVuV+U+yAD7/XMLErYgxNh9C3r1th4Ok8ASDOYzyjrz4BP8VrXVrb+8Y4awd5AOWRyzn/jlzzXziImvWF0Uvu/sJsSx1y010Zu33q9vyTeaPSUwKbhnVdFdfGJA4Z14hrcwCDx04RuthguGo290uc97an79kmVpz5djmLPubh7HgGm0kNGkQY2p4mOURlOavUqIDZ3la9tAvVy0uiqBKjWIFg9TQnKi38UG2pNtNANbiAXc3Hgfmr/AOX7ZvoS2JwZ/wDK3zDN7NdeuMcLuPdWrdhoh0k5nUEiddYGfYBAACjqW4qkhx05cAvO+0tnVaLdHWpmm9gwDW4DgdOUw1ab14VNcYp/8Q+WaS6zSU3bbA4jXNI6obTqGnuBSpibKR6JHTLqDQ90xIxtCC0q1bNa1p2Ui8+bVdSAL248pi0s2blpy+2cVr5tNwAE557o9d/dqrjabj9nuWdAPVOlOpckEWIneW2PDxtNXBG4rdth7eFa1NgRUtxHBrcT2SZzTVtzsP8AlKp7FHyt/LNiarEV0xjapazRPLV73Ug5xzWv7V3ZuS1CwvxQ6Afqnq7J9tjbP/BFfEVrZgLADWw7D74mw/7kpXqtlYr5QBtfrtpNKx+1Kta2dtBqFAsO/t9MtUDWrt2Cejv4xwVWsKNB22Bnu4KV23tym+tLOahFs7X8RT5QQcieZE12IjGlSbTbstVCrVdUdLkiIkijSIiCEiIghIiIIW07glekq3IzZPF7swzfyzasVihwX1yscPXZGDobMOBkwu9JGhRC3eQPSt7+2YvHMAubq7/EUekCAIkCIEb4y35SZJUrKgDYWVvgwIp38q7W7rC/ttNYmRjcY9Vi7m5PqA6gOQmMWA4kTS4VZPtLVlFxkiSY4kkwOoT5qNzs5XMyMPicq1EIujgadTrqjD1kHsY9kx53pc/v99ZPdPayk579Bn2jT65dqkoUHV6jaTdSfs9gXenVK8B6dJ3p1i06ise2c9L3zK17ptUOL6XSP5pMj6dwyHUtlaWlWiWtZcHZH5dkAGJ4HLrOvXmvrmnwxPL78p2NQdc+NSoD1adskwai99yHtGTZk8wR59wKMeuGttCwnNxEdhBn6d5HFdYnDEDiZxnHWPXNhslYeVZu4+0VfDZCfHo3BH925KH6vRI/ezBYiqyvSZiALFA2WxvxAuAf+JpeBx7UXD02sw7RYjqI5ibPhd9kt+Mpm/WhB/yta3rmKu8GvrO/N7ZMDwSTsnUE65EjrILSCNIyM2RVY5my4rN3XxeJXEYdMSGCK7FXcnTxCLEnj3yyv6Qp/pE/eX7ZT28G8CV0QUs4IbMSQBplI5E9cgfw5+HSN3Zj8kYW2HVbqkKlRgpOzloBjUmdcp6lEarqZhsEdZPoVunhMxebEJkIP4sC4IPPs9E0+nm5zquIJ8ok9U5NYS/7h9NgpNbOQzhVXhziSW6/e9dqzeL36TEnZ6l9b6D2ToDfhL9Ciabc9V1SZsNhfWkOfP7/AFTsKWrHXtPdPlm5Tg1OV/RFF3hNWvWdUDsjlpoI9Rpxz3rT2WMW9vbtpmnJaJH6jM8TodRuy612qAX0+/ZrOk5nfDsmdQ7ALcZu7npHFGl7qmGZmB2/T73pHXq++qufAbtGY3CVueyaXR0UXnbMe9tT8tvRMvNMXD4pKguhuO4j5Z86+0aSHKzAHq1+yIy173HLNOQ5rWiDks680TF08ruvUWHt0m4LiVK5wfFsTfsHGapteujVWZSCDY9WtrHQ90u4eHbbhCp38bDTP8LEicTmM0sSIiCEiIghIiIISIiCEl/7uYKmdmUAaaWbCoWGUeMWpgsT1kkkmUBPQ+7XmzDfFKf0QiXHPlN5+Ss2vxHkvO6fUJd3gkw6f0epyrdqlS5sLmzWFzz0EpFOXcJefgk83J8JU+eZLjn+3/uHgVza/H2eip7eJAuLxSqAFGIrgAaAAVXAAHIATAH2fXJHej89xfxmv9M8jl+/oneIU31LPYYJJ2fEK1htRlK7D3mANrPsK5bT79f/AFLY2NtHA4nZV8YiqmHNOnVyKwIa6qjqKYzDNmF7dbcpVOGpF3VBxYqov1kgC/rm17OwT09mbVDgqRUwtIg8np1xnH+ZYmubAU7qnTJyfsjLsB9RzTQ3ouLR9TRzHSOROX0y7MtVuWzN5NhYf8iUU8C3QVmY97shY+uZlff3ZRVh0ga6kZehqa6cNUtr2ykYjT/Rbbi7vH/VI3XVRxk5n761u3gw29hMJ0/4UbFxSyt0bPfLnzDxVNuK9/om+Nv/ALJGvTD+BV/25Rs61fJbuPySevhdC4qmo8mTGhHLgfFcNrOY2AvTGPq0aNJ61QKKaKXY5L2A1JsBczW/6/bJ/Sj+BV/25K75+bsV8A/zZ54ibDMPo3NMufOR3R6FWK1VzDAWzeEHamHxWKFXDa0+iRSchS7Atc5SAeBUXtyls7EwdM7LogohBwiEjKNSaIJJ6ySbygBPQ+wvNmH+JU/oRLeLUhSt6bG6A+XYo7cy8krzuDoD2S5NydwqFGkmIxSK9dgHyvYpRB1AynQsOZPA8Os0/gWUPTLeSGUt+qCM3svPQ2+mGqVcDiadG5qNTIAHFhoWUdpW49Mnxiq9pZSadkOJk9Ugeea4t2gguImAoqt4RNnUz0YqkgaXp03K+ggWI7ReRe9WJ2VisFWrqaLVFQ5GSyVQ5H4sFdGIJ5EWtfqlPsOXMGxHURxBHIzidNwelTcHMc4EdY8gPFBuHEQQCjcD3T0BvxhKY2diAEQBaRKjKPFIta3Vaef24Hunojfnzfi/gmkeLfNofqPi1dW+j+XqvPE9F7rYZBgsKAq2OHok6DUmmpJPeTPOc9D7NxBp7MpVVsWTBI4vwutAEX7Lic440uYxo3kotciVo29+xUwdV6iDLQqkuABoje7QAcNTcDttyla4iqXYueJN/wDiX5tLDUtrbP8AEOlVA9Mn3FReAa3U11PplCV6TIzI4KupKsp4qymxB7iJJhDgWuDvjBg8Yn115Lq5dIaBp9+Xip7dRGrt+Cr5TnxOy/lX7Bx9cvHY+x6WGopQpoMqKBewux5s3WSdT3zR/BDu7kRsbUHjVAUpX5U7+M37RHqXtm5bD2wuJOJNOxSjXNAN74qiM57szkfs35xXilTbquaz4W5nhtaft3lTUXdBu12clRu+9MLtDFqoAUVTYAWAuAToO0mQkn9/fOOL+F/lWQE01v8AJZ+keAVB3xHmfFIiJKuUiIghIiIISIiCEnofdrzZhvilP6ITzxPQ+7XmzDfFKf0QiTHPlt5+SsWvxHkvO6cu4S8/BJ5uT4Sp88yjE5dwl5+CTzcnwlT55k2OfI/uHgVza/F2eiqDej89xfxmv9M8jJJ70fnuL+M1/pnkZGbPhHIeCjd8R5rK2T+Xo/CU/nrPQ+1dkUK1KrSrIOiqsr1LEpmZSmUllIN/xac+QE887I/L0fhKfz1l3+FTzXiO+h/qKUS4owvuKLQYkxPDMZqxQMMcVj/1D2T+iX+PV/3JA777p7Ow+Cq1qChaq5Mh6Z3uS6gjKzkHQnlKqydnsgKOoS1Tsa7XhxruIBBjPPPT4lGarSI2B99i5nWrwbuPyTtOtXg3cfkjRuoUBXonfTzdivgH+bPPE9D76ebsV8A/zZ54iLAvku5+StXPxBBPQ+wvNmH+JU/oRPPAnofYXmzD/Eqf0InuN/LZzRbfEV53Tl3CWnuN4Raa00w2MJUoAqVtWBUaKKltQRwzcDbW3OrE5dwnMZ3drTuAW1BvyO8KvTqFmYXoPaW72B2gvSFKdTMNK1JgGPV+MTyu43ErPfDweVcIjV6LGrRXVriz0x1sBoy9ZFrdVrmarsratfDP0mHqsjc8p0b9dTow7wZfO5+2Pw3B06zqAzZkqKPJLKSrWB9ybXt22iWq25w6HNdtMmIPpu35jtCtNLK2REFeeG4Hunojfnzfi/gmlCbfwgo4jEUV8mnVqIv6quwX2AS+9+fN+L+CaTYqQalAjifFq4oCA/l6rzvPQVLzQP8ADx/p559noKl5oH+Hj/TzvGdKf6vRe22ruS0HwRbxdFVOCqHxKxzUr+5qAar3MB6162k3vtuMcTjqFamLJVYLiCPc5FvnHayrl7wvWZUdJypVlJDKQykcQRqCO0GXxu5vnhq+GSrWrUqVUC1VGdVIZeJCk3yniO/rkeIsq29f8TR3yDz4+fMIokPZsO+/vzXw8IG3FwGDFKjZatReiogaZEAAZgOWVbAdpWYPgV/Mq3xlvoaMrbfLbxxuKetr0Y8Skp5U1JtpyJ1Y99uUsnwLfmVb4y30NGRV7T8Ph5B+IkE8+HZ4yumVNutO7OFXO/vnHF/C/wAqyAk/v75xxfwv8qyAju3+Sz9LfBVnfEeZ8UiIky5SIiCEiIghIkhszY9bEfk0uBoWOij0niewSU/qXiPf0P33/wBuRPr0mGHOAKhfc0mGHOAK1ueiN2vNuG+KU/ohKL2ju/iKILOl1HFkOYDvtqB2kSTwe/eNpUFwyOgpqnRqcgLKtrAA8NB1iUcQt3XdNopEZHj/ACrNtXZ8QMjqzWrpy7hLz8Evm5PhKnzzKNAmwbC3yxWDp9DQZRTzFgGQNYnjYybErd9zS2GRO0Dn2+q9oPDHSeC2ra/gxxVavXqrVoBalarUAJe4DuzAGycbGY39kuL/AE2H9dT/AOJgf2m7Q9/S/hj7Y/tN2j7+l/CH2yq1mJARtN++xdzQ4FQlTZj4XHLh6hUvTrUwSpJBuyMCCQOTCXjvnsh8Xg6uGpsqu5p2LXsMtVHN7AngplB7Q2lUrVmxFRr1WYOWAA1AAWwHCwUeqbKPCZtD39P+EJ1eWlxVNJ7SNpuvCcjw0lFOoxoIOhUh/ZLi/wBNh/XU/wDidX8E2MAJFXDk24XfXs8iYX9pu0Pf0v4Y+2dX8JW0CCM9MXFrimLjunmziX9TfvsRNDgVp6m4B651q8G7j8k7AW0nBF9I4GqrL0Rvp5uxXwD/ADZ54my4/fvG1qDYeo6lGXKxCAMy8wT29gE1qLMMtKltTLXxmdysVqgeQQgnofYXmzD/ABKn9CJ54mzYbfzG06AwyunRqnRqcgzBAMoAbhoNL2hiVrUuGNayMjv/AIRRqBhJKgNl4bpalKkWCCo6oXPBQxALHuvLS214KKbAHC1ihAF1qeMrHrzDVSfSOoCVNblNg2RvnjsMAlOsxQcEcCoAOoZtQOwESW8pXD3B1B8RuOh8Z7R2hcU3MGTgp2j4KMYWAephwvNgzsfQuQX9YlkUEw+y8EAWtSoqSSbZqjEkmw5szE2A65H0sfj6+z6FfDHDtiXs75rhQpDHKguR0g8QG5to0qDeLamLr1SuMdzUpsVyNZQpGhARfFHeOPWYpYyvfu2KrwA05ga5ZT+5KsEtpCWg58VHbQxJq1KtVvKqO9RuwuxYgekz0Fvz5vxfwTTzuRNo2lv3ja9FsPUqIUZcrEIAzDnc9vYBGN7aPrPpFkQ0/To6ZHgoadQNDp3/ALrV56CpeaB/h4/088/TZRv1jPwf8Fzr0XR9F5AzZMuW2b9XS9r+me4havuNjYjIyZRSqBkzvWtCIiMZUQCS5fAt+ZVvjLfQ0ZTUnd3t7MVg1anh2UK7ZirIG8awW453ICj0Slf277iiabNZH0UlJ4Y6Su2/vnHF/C/yrICT9XYeOxbvXaixaoSzM2Wncn+6xBA9E4r7n4tBcUs3cyMfVe5ldmKWFINouuKe0ABHvG6jLj+669xVdLgwxyKgYnetSZSVZSrDiGBBHeDqJ0jTdKhSIiCEmVsvBmtVSkNMx1PUBqx9QM7bL2e1d8im2lyTyHdz7pt2ytiU8O4cOWYgqL2HHU2tzsp9sr17htMETnCr17htMEfmjLyU/h0VFVEFlUWAHKfTpJjdJHSRJsrP7Cyekle72bOWjWugslQZgOo8GA7OB9M3npJrG/DjLSHPMbd1hfX1S3ZEtqgDerljLKwA36rUTMqngKrC603YdYUkesCbHuNgqb56jAM4ICg65QRfMB1nr7JucoYn7R/hK5oMpyWxJJgaA5ACdDrI5La2eE+/pio50A6ACfvuKqathHTykde8W+UT4XlwTCxuyKFXy6SntAyn95bGVaPtc0mKtIgcWun6EDxUtXAj+R/ePMHyVWxNv2luZa5oPf8AuP8AU4+semariKDIxR1KsOIPKaSzxG2vBNF0kajQjmPPMdaU3FpWtzFQR17j2+sFfKIiXVXSIiCEiIghIiIISbLufg9n1RVTHVnpOcvRMDlUDXNckEXvbytOqa1EjqsL2loJHWNV6DBlXDuzhtnbMNSsNopUDrbL0iEaG9xTpklm0tftPXKx3m2kMTi6+IUELUe6g8coAVb9pCg+mRkSChae7qOqucXOIiTGnZyC6dU2gGgQAk+v4O9s2Rsvvspt67WjCKC6A8C6gjrBIvLftaR3t8bYtAbM9ccOo8VC50KmwYls4jZlGp5dKmx6yov67XmDV3Xwjf8A5W/VZx7L2lduMUvzNI5QfGF4HhVpE3+ruVhzwaqvpU/Ks1/b+7DYdekV89O4B0sVvoLi+ovpeWqOI29VwaDBPEfYXQeFASwtyNiolNcQ4BqPqt/cryI7Txv1Edsrwy2sDWU0qZQ+LkTL3ZRaZj24uq1KyZRpkgVCQ4jgB8P9058QCNJCb4TRbUqucfyjLt39kfWVK9LHSzB6SOknyX3C0eyvlt3ZVPFJlcAOAclTmp+tesSqMRQZGZGFmUlSO0GxludJK63yQDEsR7oI3py2+qfQ/YS+qtqvsnGWbJc0f0kEAgdR2pjSRI1KS4xbtDRWGswevIx9QoSczicz6WkSmN1sUErZT7tcvpGo+uTe3MV0fQ1eSVhfuysD7LzTabkEEcQQR3jhNn2zVD4bN15GHpt9soXDB79juOR8PAqlWpD3rXccvLwU6lcEAg3B1BHMTnpZB7vtait+trd1/tvJLpItqN2HlvBU3UtlxCyulkZvE9M0WFTj7jS/j2NrffhMnpJAbzYgHIoYHUkgdfIn1mSWwLqoC7o0peF9t1q1PDhq9WplDDKiC5La6sVHIHQH9abZs3bNGvojeN71tG7wOY7pV8CeX+AUrx7qr3kPMQcoAGgj/wBTyWotsTfbtDGtGyOcknUz+xVvzmVvg95cTT06TMOphf2+V7ZnrvtV50qZP7Q9l5mavsvfNPQ2XDnH0P7pwzGbZw6Ujs9JW8zQ9+cQjVUVbFkUhyO0ghT2jX96fDG7116gKjKgPvAb/vEm3otIKOcEwCra1vf1yJAIABnXIknTTQCRvnIJfiOJsr0/dUxllJOWnAef0SIiatJEiIghIiIISIiCEiIghIiIIX2wbAVEJ4B1J7gwvLelNyVwO8OJpAKtQlRoFYBgOwE6gemLcQsnXGyWESJ1+z4LhzZVnRNCp77Vx5SUj6GH80yae/Te6oL6GI+VTFJwu5G4HtHnC42Ct0kLvmbYSp2lB/nB+qYeG31ony0dO3Rh7NfZMfbG+K2C4cBr+UzqbW6gtwT6YULO4bWadg5EHgMjOuYQGmVp+Fo53VMwXMbZibAdpllYeyIqL5KqAO4Cwla4qtnYsVVb8Qoyj0DlN8wdYmnTJ0JRSR6BFnts15ZQcT0ZcNnL4oBnrykdXaVpMCguqCM4GfVw7+/sUj0sdLMPpY6SYD3S0Wys3pZoe9NXNiX7Aq/5Qfrm2iuCSOYtf0zR9s36erf359XL2Wmx9i6EXtR51DP8i0+iS426KDQN7vAHzWHETmfSlmUUEmw1MlNpYkCmlEG5AXNbsHD1/JIq9uESJ9Pac0ndn2rwtBIPBSGF2tUQBdCo0ta3tEmcLtNKnA2PUePo65q0CQ1bOnU0yPELh1JrlJbWxzs7JchAbW6+u/XI2Ik9OmKbQ1q7aABASIidr1IiIISIiCEiIghIiIISIiCEiIghIiIISIiCEiIghIiIISIiCEmRTxlVbZXYW4C5sPqmPE5cxrxDgDzE+K6a4tMgxyyW1bG2g1RPHN2U2vwuDw4emd8dtdKenlN1Dl3nlNYp1HF1DEA8bE698+My7vZS3fdvrPMMJkMaI3CZPPOGga66pwMaqNoNY0dIZFxz7hy3nuUrU24+fpFAU2ykcQwBJF+Goude2YmP2g9UjOdBwHAD/mYsR7Rw20oua9lNoc0QDEkDgCc/rMZaJbUu69Rpa55IOZG4nkI/mSdUnM4iXVXX/9k=" alt="">
+            </div>
+            <div class="ortaorta">
+                <div class="item2">
+                    <div class="d1">
+                        <img src="https://www.freepnglogos.com/uploads/whatsapp-logo-app-png-4.png" alt="whatsapp logo app png" />
+                    </div>
+                    <div class="d2">
+                        <p>whatsapp'tan yazmak uygun değildir gmailden yazınz</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="d1">
+                        <img src="https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-icon-buddha-quotes-that-can-change-your-life-gabriela-green-24.png"  alt="instagram icon buddha quotes that can change your life gabriela green" />
+                    </div>
+                    <div class="d2">
+                        <p>instagram'dan yazmak uygun değildir gmailden yazınz</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="d1">
+                        <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"  alt="twitter bird symbols png logo" />
+                    </div>
+                    <div class="d2">
+                        <p>twitter'dan yenilikleri takip edip eleştirilerinizi yazabilirsiniz</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="ortaalt2">
+                <div class="ortaalt">
+                    <div class="ortat">
+                        <h1>Lorem, ipsum.</h1>
+                        <br>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veritatis repellendus? Possimus
+                            quasi nesciunt ut maiores omnis aspernatur, itaque officia!</article>
+                    </div>
+                    <div class="ortar">
+                        <img src="https://pbs.twimg.com/media/EmMgcZ8XIAAJEVB.jpg"/>
+                    </div>
+                </div>
+                <div class="ortaalt">
+                    <div class="ortat">
+                        <h1>Lorem, ipsum.</h1>
+                        <br>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veritatis repellendus? Possimus
+                            quasi nesciunt ut maiores omnis aspernatur, itaque officia!</article>
+                    </div>
+                    <div class="ortar">
+                        <img src="https://pbs.twimg.com/media/EmMgcZ8XIAAJEVB.jpg"/>
+                    </div>
+                </div>
+                <div class="ortaalt">
+                    <div class="ortat">
+                        <h1>Lorem, ipsum.</h1>
+                        <br>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veritatis repellendus? Possimus
+                            quasi nesciunt ut maiores omnis aspernatur, itaque officia!</article>
+                    </div>
+                    <div class="ortar">
+                        <img src="https://pbs.twimg.com/media/EmMgcZ8XIAAJEVB.jpg" />
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="alt">
+        <div class="t">
+            <div class="j">
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="altr">
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="altr">
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

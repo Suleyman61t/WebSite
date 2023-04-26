@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suleyman61</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ustmenu {
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: 6%;
+
+
+    }
+
+    .orta {
+        width: 50%;
+        margin-bottom: 5px;
+        background-color: grey;
+        height: 1200px;
+        align-items: center;
+    }
+
+    .ustalt {
+        background-color: orange;
+        height: 10px;
+    }
+
+    .alt {
+        display: flex;
+        align-items: center;
+        background-color: lightblue;
+        color: white;
+        height: 80px;
+        justify-content: space-around;
+     
+    }
+
+    .item {
+        font-size: 25px;
+        color: white;
+        height: 40px;
+        width: 130px;
+        text-align: center;
+        align-items: center;
+        text-shadow:black 2px 2px 2px;
+    }
+
+    .ust a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .ustmenu div:hover {
+        text-shadow: blue 3px 3px 3px;
+    }
+
+    .ust {
+        background-color: lightblue;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ustlogo {
+        align-items: center;
+        margin-right: 6%;
+    }
+    .ustlogo h1:first-letter{
+        background-color: black;
+        color: lightblue;
+        font-size: larger;
+        text-decoration: underline;
+    }
+    .ustlogo p:hover{
+        text-shadow: darkblue 5px 5px 5px;
+        color: aqua;
+    }
+    .ustlogo p{
+        font-size: 25px;
+        text-shadow: rgb(65, 75, 79) 5px 5px 5px;
+    }
+
+    .ortaust {
+        display: flex;
+        align-items: center;
+        border-style: solid;
+        border-width: medium;
+        height: 25%;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ortaust img {
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 83%;
+        width: 71%;
+
+    }
+
+    .ortaorta {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        height: 25%;
+        width: 100%;
+    }
+
+    .item2 {
+        margin-left: 30px;
+        width: 33%;
+        height: 100%;
+    }
+    .d1{
+        height: 67%;
+        width: 100%;
+    }
+    .d1 img{
+        
+        height: 100%;
+        width: 100%;
+    }
+    .d2{
+        height: 33%;
+        width: 100%;
+    }
+
+    .ortaalt {
+        height: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        width: auto;
+
+    }
+
+    .ortar {
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 30%;
+        height: 100%;
+    }
+    .ortar img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .altr {
+        align-items: center;
+        margin-left: 260px;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        
+
+    }
+    .t{
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .j{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .ortat{
+        margin-left: 15px;
+        width: 70%;
+        height: 100%;
+    }
+    .ortat article{
+        font-size: larger;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .orta1{
+        background-color: aqua;
+        width: 25%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
+    .orta2{
+        display: flex;
+        flex-direction: column;
+        background-color: bisque;
+        width: 25%;
+        height: 1200px;
+    }
+    .anamenu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .aitem1{
+        display: flex;
+        background-color: bisque;
+        height: 25%;
+    }
+    /* sağ üst köşenin borderli alanı */
+    .aitem11{
+        margin: auto;
+        background-color: rgb(221, 192, 156);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .aitem11 img{
+        height: 100%;
+        width: 100%;
+    }
+    .aitem2{
+        display: flex;
+        background-color: rgb(221, 192, 156);
+        height: 25%;
+    }
+    .aitem22{
+        margin: auto;
+        background-color: rgb(221, 206, 156);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .aitem22 img{
+        height: 100%;
+        width: 100%;
+    }
+    .aitem3{
+        display: flex;
+        background-color: rgb(221, 206, 156);
+        height: 25%;
+    }
+    .aitem33{
+        margin: auto;
+        background-color: rgb(211, 221, 156);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .aitem33 img{
+        height: 100%;
+        width: 100%;
+    }
+    .aitem4{
+        display: flex;
+        background-color: rgb(211, 221, 156);
+        height: 25%;
+    }
+    .aitem44{
+        margin: auto;
+        background-color: rgb(221, 211, 156);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    
+    .aitem44 img{
+        height: 100%;
+        width: 100%;
+    }
+    .uitem1{
+        display: flex;
+        background-color: aqua;
+        height: 25%;
+        align-items: center;
+    }
+    .uitem11{
+        margin: auto;
+        background-color: rgb(49, 184, 189);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .uitem11 img{
+        height: 100%;
+        width: 100%;
+    }
+    .uitem2{
+        display: flex;
+        background-color: rgb(49, 184, 189);
+        height: 25%;
+    }
+    .uitem22{
+        margin: auto;
+        background-color: rgb(49, 189, 131);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .uitem22 img{
+        height: 100%;
+        width: 100%;
+    }
+    .uitem3{
+        display: flex;
+        background-color: rgb(49, 189, 131);
+        height: 25%;
+    }
+    .uitem33{
+        margin: auto;
+        background-color: rgb(49, 189, 103);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .uitem33 img{
+        height: 100%;
+        width: 100%;
+    }
+    .uitem4{
+        display: flex;
+        background-color: rgb(49, 189, 103);
+        height: 25%;
+    }
+    .uitem44{
+        margin: auto;
+        background-color: rgb(49, 189, 103);
+        height: 75%;
+        width: 75%;
+        border-style: solid;
+        border-width: medium;
+    }
+    .uitem44 img{
+        height: 100%;
+        width: 100%;
+    }
+    .alt p:hover{
+        background-color: blue;
+        color: aquamarine;
+    }
+    .t div:hover{
+        background-color: cadetblue;
+        color: rgb(54, 120, 241);
+    }
+    .item2 img{
+        height: 100%;
+        width: 100%;
+    }
+    .ortaorta .item2{
+        height: 100%;
+        width: 30%;
+    } 
+    .ortaalt2 {
+        display: flex;
+        flex-direction: column;
+        height: 50%; 
+        width: 100%;
+    }
+    .ortaalt2 .ortaalt{
+       height:25%; 
+       width: 87%;
+    }
+.box {
+    max-width: 350px;
+    position: relative;
+}
+ 
+ 
+.search {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    font-size:18px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+ 
+.search:focus {
+    width: 100%;
+} 
+.ayar{
+    margin-right: 50px ;
+}
+</style>
+
+<body>
+    <div class="ust">
+        <div class="ustlogo">
+
+            <h1>WEB TASARIM</h1>
+            <p>Süleyman kumaş</p>
+
+        </div>
+        <form class="ayar">
+            <div class="box">
+                <input type="text" class="search" placeholder="Ara..">
+            </div>
+        </form>
+        <div class="ustmenu">
+
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/anasayfa.html">ana sayfa</a></div>
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/iletisim.html">iletişim</a></div>
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/hak%C4%B1m%C4%B1zda.html">hakımızda</a></div>
+            <div class="item"><a href="file:///C:/Users/S%C3%9CLEMAN/OneDrive/Masa%C3%BCst%C3%BC/Codes/Suleyman'%C4%B1n%20Codelar%C4%B1/web%20tasar%C4%B1m/kendi%20yapt%C4%B1klar%C4%B1m/dersler.html">dersler</a></div>
+
+        </div>
+    </div>
+    <div class="ustalt"></div>
+    <div class="anamenu">
+        <div class="orta1">
+            <div class="uitem1">
+                <div class="uitem11">
+                    <img src="https://64.media.tumblr.com/c394233fff9ce25a6342205187082531/7715448dd2030aa5-4f/s1280x1920/7bedf81e1ecf07eb1bd18c86df3ee511f2efde23.jpg" alt="">
+                </div>
+            </div>
+            <div class="uitem2">
+                <div class="uitem22">
+                        <img src="https://media.tenor.com/ZFqkfXde-j4AAAAC/ahri.gif" alt="">
+                </div>
+            </div>
+            <div class="uitem3">
+                <div class="uitem33">
+                    <img src="https://media.tenor.com/sxLBjystCmIAAAAC/damn-daniel-one-piece.gif" alt="">
+                </div>
+            </div>
+            <div class="uitem4">
+                <div class="uitem44">
+                    <img src="https://media.tenor.com/kJtVMkRaVfoAAAAd/dead-by-daylight.gif" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="orta">
+            <div class="ortaust">
+                <img src="https://www.ws.com.tr/Content/img/web-sitesi-nasil-yapilir.png" alt="">
+            </div>
+            <div class="ortaorta">
+                <div class="item2">
+                    <div class="d1">
+                        <img src="https://www.freepnglogos.com/uploads/whatsapp-logo-app-png-4.png" alt="whatsapp logo app png" />
+                    </div>
+                    <div class="d2">
+                        <p>whatsapp'tan yazmak uygun değildir gmailden yazınz</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="d1">
+                        <img src="https://www.freepnglogos.com/uploads/instagram-icon-png/instagram-icon-buddha-quotes-that-can-change-your-life-gabriela-green-24.png"  alt="instagram icon buddha quotes that can change your life gabriela green" />
+                    </div>
+                    <div class="d2">
+                        <p>instagram'dan yazmak uygun değildir gmailden yazınz</p>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="d1">
+                        <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"  alt="twitter bird symbols png logo" />
+                    </div>
+                    <div class="d2">
+                        <p>twitter'dan yenilikleri takip edip eleştirilerinizi yazabilirsiniz</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="ortaalt2">
+                <div class="ortaalt">
+                    <div class="ortat">
+                        <h1>Lorem, ipsum.</h1>
+                        <br>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veritatis repellendus? Possimus
+                            quasi nesciunt ut maiores omnis aspernatur, itaque officia!</article>
+                    </div>
+                    <div class="ortar">
+                        <img src="https://pbs.twimg.com/media/EmMgcZ8XIAAJEVB.jpg"/>
+                    </div>
+                </div>
+                <div class="ortaalt">
+                    <div class="ortat">
+                        <h1>Lorem, ipsum.</h1>
+                        <br>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veritatis repellendus? Possimus
+                            quasi nesciunt ut maiores omnis aspernatur, itaque officia!</article>
+                    </div>
+                    <div class="ortar">
+                        <img src="https://pbs.twimg.com/media/EmMgcZ8XIAAJEVB.jpg" />
+                    </div>
+                </div>
+                <div class="ortaalt">
+                    <div class="ortat">
+                        <h1>Lorem, ipsum.</h1>
+                        <br>
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, veritatis repellendus? Possimus
+                            quasi nesciunt ut maiores omnis aspernatur, itaque officia!</article>
+                    </div>
+                    <div class="ortar">
+                        <img src="https://pbs.twimg.com/media/EmMgcZ8XIAAJEVB.jpg" />
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="orta2">
+            <div class="aitem1">
+                <div class="aitem11">
+                    <img src="https://fastly.4sqi.net/img/general/600x600/594813141_4AsQr9WgX4X1hMIdKf4nCVhqFxbxqqDe4pyqZqUVGSE.jpg" alt="">
+                </div>
+            </div>
+            <div class="aitem2">
+                <div class="aitem22">
+                    <img src="https://media.tenor.com/jYT0WioVQwIAAAAd/ggeezy-ggiorno.gif" alt="">
+                </div>
+            </div>
+            <div class="aitem3">
+                <div class="aitem33">
+                    <img src="https://media.tenor.com/N_ArEhi1bOkAAAAM/rudeus-mushoku-tensei.gif" alt="">
+                </div>
+            </div>
+            <div class="aitem4">
+                <div class="aitem44">
+                    <img src="https://media.tenor.com/Zfc4jRwHh9QAAAAC/cringe-meme-subaru.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alt">
+        <div class="t">
+            <div class="j">
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="altr">
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="altr">
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+                <div>
+                    <p>hakkımızda</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
